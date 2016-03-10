@@ -1,0 +1,17 @@
+<div ng-repeat="article in articles">
+    <div class="couple">
+        <div ng-repeat="one in article">
+            <div class="z-depth-1 tileSB float">
+                <div class="tile-image">
+                    <img src="{{one.thumbnail}}">
+                </div>
+                <div class="tile-content">
+                    <span class="tile-title">{{one.title}}</span>
+                    <p>{{one.text}}</p>
+                    <a href="{{one.articleURL}}">read more</a>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>

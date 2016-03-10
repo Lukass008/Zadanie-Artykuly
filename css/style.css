@@ -1,0 +1,100 @@
+.header{
+    height: 150px;
+}
+
+.wrapper{
+    width: 1200px;
+    margin: 20px auto;
+}
+.wrapperSb{
+    width: 1200px;
+    margin: 20px auto;
+}
+
+.wrapperMg{
+    width: 1200px;
+    margin: 20px auto;
+}
+
+.float{
+    float: left;
+}
+
+.tileSB{
+    width: 46%;
+    margin: 2%;
+}
+.tile-image{
+    width: 100%;
+}
+.tile-content{
+    width: 100%;
+    padding: 2% 4% 3% 4%;
+}
+.tile-title{
+    font-size: 1.3em;
+}
+.tileSB img{
+    max-width: 100%;
+}
+
+.tileMG{
+    width: 30%;
+    margin: 1.665%;
+}
+.tileMG img{
+    width: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+#contact{
+    width: 600px;
+    margin: 20px auto;
+}
+
+.css-form input.ng-invalid.ng-touched {
+    border-bottom: 1px solid red;
+}
+
+.error{
+    font-size: 0.8em;
+    color: red;
+    line-height: 0px;
+    margin-top: -10px;
+}
+
+
+@media screen and (max-width: 1200px){
+    .wrapper{
+        width: 94%;
+        margin: 3%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .tileSB{
+        width: 98%;
+        margin: 1%;
+    }
+    .wrapper{
+        width: 100%;
+        margin: 10px auto;
+    }
+    .tileMG{
+        width: 48%;
+        margin: 1%;
+    }
+    #contact{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .tileMG{
+        width: 94%;
+        margin: 3%;
+    }
+}

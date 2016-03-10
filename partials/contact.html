@@ -1,0 +1,26 @@
+<div id="contact">
+    <h3>Contact us</h3>
+
+    <form novalidate class="css-form" ng-submit="send(user)" name="myForm" >
+        <input type="email" name="email" class="" ng-model="user.email" placeholder="E-mail" required>
+        <span class="error" ng-show="(submitted && myForm.email.$pristine) || (myForm.email.$touched && myForm.email.$error.required)">This is a required field</span>
+        <span class="error" ng-show="myForm.email.$dirty && myForm.email.$invalid && !myForm.email.$error.required">This field is invalid </span><br/>
+
+        <input type="text" class="" name="name" ng-model="user.name" placeholder="First Name" required ng-minlength="3" ng-maxlength="15">
+        <span class="error" ng-show="(submitted && myForm.name.$pristine) || (myForm.name.$touched && myForm.name.$error.required)">This is a required field</span>
+        <span class="error" ng-show="myForm.name.$dirty && myForm.name.$error.minlength">Minimum length required is 3</span>
+
+        <input type="text" class="" name="surname" ng-model="user.surname" placeholder="Second Name" required ng-minlength="3" ng-maxlength="20"><br><br>
+        <span class="error" ng-show="(submitted && myForm.surname.$pristine) || (myForm.surname.$touched && myForm.surname.$error.required)">This is a required field</span>
+        <span class="error" ng-show="myForm.surname.$dirty && myForm.surname.$error.minlength">Minimum length required is 3</span>
+
+        <div class="input-field col s10">
+            <textarea id="textarea1" class="materialize-textarea" name="message" ng-model="user.message" required></textarea>
+            <label for="textarea1">Message</label>
+        </div>
+        <span class="error" ng-show="(submitted && myForm.email.$pristine) || (myForm.message.$touched && myForm.message.$error.required)">This is a required field<br><br></span>
+
+        <button class="btn" ng-click="submitted=true" ng-disable="myForm.$invalid">Send</button>
+    </form>
+
+</div>
